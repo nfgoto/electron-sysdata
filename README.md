@@ -1,1 +1,3 @@
-# Electron app displaying system information
+# Electron SysInfo
+
+**Electron app displaying system information**
