@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/nfgoto/electron-sysinfo/issues"
   },
-  "homepage": "https://github.com/nfgoto/electron-sysinfo#readme"
+  "homepage": "https://github.com/nfgoto/electron-sysinfo#readme",
+  "dependencies": {
+    "electron": "^4.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
 }
