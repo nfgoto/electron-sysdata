@@ -1,10 +1,10 @@
-// const fs = require('fs');
 const path = require('path');
-const url = require('url');
+// const url = require('url');
 
 const { app, BrowserWindow } = require('electron');
 
-// Window object init - not close window after grabage collection
+// Keep a global reference of the window object, if you don't, the window will
+// be closed automatically when the JavaScript object is garbage collected.
 let window;
 
 const createWindow = () => {
@@ -16,21 +16,29 @@ const createWindow = () => {
     });
 
     // load page at file://.../index.html
-    window.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
-        protocol: 'file',
-        slashes: true
-    }));
+    // window.loadURL(url.format({
+    //     pathname: path.join(__dirname, 'index.html'),
+    //     protocol: 'file',
+    //     slashes: true
+    // }));
+
+    // and load the index.html of the app.
+    window.loadFile('index.html');
 
     // open devtools - only for dev of course
     window.webContents.openDevTools();
 
     window.on('close', () => {
+        // Dereference the window object, usually you would store windows
+        // in an array if your app supports multi windows, this is the time
+        // when you should delete the corresponding element.
         window = null;
     });
 };
 
-// launch app whrn electron ready
+// This method will be called when Electron has finished
+// initialization and is ready to create browser windows.
+// Some APIs can only be used after this event occurs.
 app.on('ready', createWindow);
 
 // quit when all windows closed
