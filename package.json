@@ -1,14 +1,15 @@
 {
-  "name": "electron-sysinfo",
+  "name": "electron-sysdata",
   "version": "1.0.0",
   "description": "Electron app displaying system information",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
+    "start": "npx electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nfgoto/electron-sysinfo.git"
+    "url": "git+https://github.com/nfgoto/electron-sysdata.git"
   },
   "keywords": [
     "electron",
@@ -20,9 +21,9 @@
   "author": "Florian GOTO",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nfgoto/electron-sysinfo/issues"
+    "url": "https://github.com/nfgoto/electron-sysdata"
   },
-  "homepage": "https://github.com/nfgoto/electron-sysinfo#readme",
+  "homepage": "https://github.com/nfgoto/electron-sysdata#readme",
   "dependencies": {
     "electron": "^4.0.4"
   },
