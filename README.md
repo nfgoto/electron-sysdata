@@ -1,3 +1,3 @@
 # Electron SysData
 
-**Electron app displaying system information**
+Electron dashboard displaying system information
