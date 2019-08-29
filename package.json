@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/nfgoto/electron-sysdata#readme",
   "dependencies": {
-    "electron": "^4.0.4"
+    "electron": "^4.0.8"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
